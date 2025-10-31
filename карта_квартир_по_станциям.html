@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd4556c56fed82dab5d96cb5c66532e4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd4556c56fed82dab5d96cb5c66532e4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd4556c56fed82dab5d96cb5c66532e4 = L.map(
+                "map_fd4556c56fed82dab5d96cb5c66532e4",
+                {
+                    center: [55.751244, 37.618423],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+
+            
+
+        
+    
+            var tile_layer_c182dbfdaeb21a72705a4a21ec0f39b1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var marker_c865d63a29192adcef3fc071dc8d7152 = L.marker(
+                [55.8088, 37.6387],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_483d06ef49a6e77ddedbb51492ec2e25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c865d63a29192adcef3fc071dc8d7152.setIcon(icon_483d06ef49a6e77ddedbb51492ec2e25);
+        
+    
+        var popup_e9223f185896ca3193d20e67cdb121d5 = L.popup({"maxWidth": 400});
+
+        
+            var html_35d6abb7f1fdfd28df3b5dee497a4ee2 = $(`<div id="html_35d6abb7f1fdfd28df3b5dee497a4ee2" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Алексеевская</b><br/>           День просмотра: <b>6</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322349488/">https://www.cian.ru/sale/flat/322349488/</a></li></ul>         </div>         </div>`)[0];
+            popup_e9223f185896ca3193d20e67cdb121d5.setContent(html_35d6abb7f1fdfd28df3b5dee497a4ee2);
+        
+
+        marker_c865d63a29192adcef3fc071dc8d7152.bindPopup(popup_e9223f185896ca3193d20e67cdb121d5)
+        ;
+
+        
+    
+    
+            marker_c865d63a29192adcef3fc071dc8d7152.bindTooltip(
+                `<div>
+                     Алексеевская — день 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79f8895ce5db945af6bad094f424d92d = L.marker(
+                [55.8, 37.5323],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_fa613b2c86fc8c51cd9b35cac0151731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_79f8895ce5db945af6bad094f424d92d.setIcon(icon_fa613b2c86fc8c51cd9b35cac0151731);
+        
+    
+        var popup_241cb06eb8dafa798851af03f67194f5 = L.popup({"maxWidth": 400});
+
+        
+            var html_e76b2ab46d092f5582949e2c9b2e945d = $(`<div id="html_e76b2ab46d092f5582949e2c9b2e945d" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Аэропорт</b><br/>           День просмотра: <b>6</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/320408495/">https://www.cian.ru/sale/flat/320408495/</a></li></ul>         </div>         </div>`)[0];
+            popup_241cb06eb8dafa798851af03f67194f5.setContent(html_e76b2ab46d092f5582949e2c9b2e945d);
+        
+
+        marker_79f8895ce5db945af6bad094f424d92d.bindPopup(popup_241cb06eb8dafa798851af03f67194f5)
+        ;
+
+        
+    
+    
+            marker_79f8895ce5db945af6bad094f424d92d.bindTooltip(
+                `<div>
+                     Аэропорт — день 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8babe757b54cace5152ea4bdcce6fd73 = L.marker(
+                [55.7726, 37.6793],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_49daf0fee6b7f1016e777e03c5e6d2bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8babe757b54cace5152ea4bdcce6fd73.setIcon(icon_49daf0fee6b7f1016e777e03c5e6d2bd);
+        
+    
+        var popup_3a184c8c002ccc97d23ca395bddc8635 = L.popup({"maxWidth": 400});
+
+        
+            var html_e353270b8c51d57af0d74ed23a9a6b17 = $(`<div id="html_e353270b8c51d57af0d74ed23a9a6b17" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Бауманская</b><br/>           День просмотра: <b>2</b><br/>           Квартир: <b>6</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/307590728/">https://www.cian.ru/sale/flat/307590728/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/323072397/">https://www.cian.ru/sale/flat/323072397/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322948195/">https://www.cian.ru/sale/flat/322948195/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/279581181/">https://www.cian.ru/sale/flat/279581181/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322825518/">https://www.cian.ru/sale/flat/322825518/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/320912688/">https://www.cian.ru/sale/flat/320912688/</a></li></ul>         </div>         </div>`)[0];
+            popup_3a184c8c002ccc97d23ca395bddc8635.setContent(html_e353270b8c51d57af0d74ed23a9a6b17);
+        
+
+        marker_8babe757b54cace5152ea4bdcce6fd73.bindPopup(popup_3a184c8c002ccc97d23ca395bddc8635)
+        ;
+
+        
+    
+    
+            marker_8babe757b54cace5152ea4bdcce6fd73.bindTooltip(
+                `<div>
+                     Бауманская — день 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb4e327f6bd08afb7645c68e1eac7fa6 = L.marker(
+                [55.8197, 37.4973],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_4616295b4edacc17ad562dee9a556ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_cb4e327f6bd08afb7645c68e1eac7fa6.setIcon(icon_4616295b4edacc17ad562dee9a556ac9);
+        
+    
+        var popup_c5b2aa27654e283e6fbc097e5d5f9cb4 = L.popup({"maxWidth": 400});
+
+        
+            var html_b01a8ecb953874bbd01cb38a1f57cb26 = $(`<div id="html_b01a8ecb953874bbd01cb38a1f57cb26" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Войковская</b><br/>           День просмотра: <b>6</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322209856/">https://www.cian.ru/sale/flat/322209856/</a></li></ul>         </div>         </div>`)[0];
+            popup_c5b2aa27654e283e6fbc097e5d5f9cb4.setContent(html_b01a8ecb953874bbd01cb38a1f57cb26);
+        
+
+        marker_cb4e327f6bd08afb7645c68e1eac7fa6.bindPopup(popup_c5b2aa27654e283e6fbc097e5d5f9cb4)
+        ;
+
+        
+    
+    
+            marker_cb4e327f6bd08afb7645c68e1eac7fa6.bindTooltip(
+                `<div>
+                     Войковская — день 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_024be3feba923816b7b4e4ee701fe248 = L.marker(
+                [55.7083, 37.6455],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_a3bf15821db7ee411261a87240a3dd4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_024be3feba923816b7b4e4ee701fe248.setIcon(icon_a3bf15821db7ee411261a87240a3dd4d);
+        
+    
+        var popup_c6d532f6212b108de27a0e6e12c2ecf6 = L.popup({"maxWidth": 400});
+
+        
+            var html_9523331d8648569274ec3de6502fc6da = $(`<div id="html_9523331d8648569274ec3de6502fc6da" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>ЗИЛ</b><br/>           День просмотра: <b>4</b><br/>           Квартир: <b>2</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322949559/">https://www.cian.ru/sale/flat/322949559/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322552952/">https://www.cian.ru/sale/flat/322552952/</a></li></ul>         </div>         </div>`)[0];
+            popup_c6d532f6212b108de27a0e6e12c2ecf6.setContent(html_9523331d8648569274ec3de6502fc6da);
+        
+
+        marker_024be3feba923816b7b4e4ee701fe248.bindPopup(popup_c6d532f6212b108de27a0e6e12c2ecf6)
+        ;
+
+        
+    
+    
+            marker_024be3feba923816b7b4e4ee701fe248.bindTooltip(
+                `<div>
+                     ЗИЛ — день 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb7083f6f402fbc687462e0135b4665b = L.marker(
+                [55.7439, 37.5651],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_30861621020eaa282ae9dbf05c5ae24d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bb7083f6f402fbc687462e0135b4665b.setIcon(icon_30861621020eaa282ae9dbf05c5ae24d);
+        
+    
+        var popup_73e9d65e7597416af777ced4f1e4b06a = L.popup({"maxWidth": 400});
+
+        
+            var html_c3620fd37deb0d41940a0768c2c2ad78 = $(`<div id="html_c3620fd37deb0d41940a0768c2c2ad78" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Киевская</b><br/>           День просмотра: <b>5</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/323330075/">https://www.cian.ru/sale/flat/323330075/</a></li></ul>         </div>         </div>`)[0];
+            popup_73e9d65e7597416af777ced4f1e4b06a.setContent(html_c3620fd37deb0d41940a0768c2c2ad78);
+        
+
+        marker_bb7083f6f402fbc687462e0135b4665b.bindPopup(popup_73e9d65e7597416af777ced4f1e4b06a)
+        ;
+
+        
+    
+    
+            marker_bb7083f6f402fbc687462e0135b4665b.bindTooltip(
+                `<div>
+                     Киевская — день 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f197532099f0e6c8b0975253174ed0a = L.marker(
+                [55.6775, 37.6631],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_cbb3bbe22c9327c02a09ae14d360b35c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4f197532099f0e6c8b0975253174ed0a.setIcon(icon_cbb3bbe22c9327c02a09ae14d360b35c);
+        
+    
+        var popup_3b855461aafd0ca27f883fe161f8beb0 = L.popup({"maxWidth": 400});
+
+        
+            var html_bb67152b72596ef7036b9d4466772dd9 = $(`<div id="html_bb67152b72596ef7036b9d4466772dd9" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Коломенская</b><br/>           День просмотра: <b>4</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/320553250/">https://www.cian.ru/sale/flat/320553250/</a></li></ul>         </div>         </div>`)[0];
+            popup_3b855461aafd0ca27f883fe161f8beb0.setContent(html_bb67152b72596ef7036b9d4466772dd9);
+        
+
+        marker_4f197532099f0e6c8b0975253174ed0a.bindPopup(popup_3b855461aafd0ca27f883fe161f8beb0)
+        ;
+
+        
+    
+    
+            marker_4f197532099f0e6c8b0975253174ed0a.bindTooltip(
+                `<div>
+                     Коломенская — день 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aca87be7d1a39e71cd7b10e7059f7183 = L.marker(
+                [55.7608, 37.5774],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_1ca87a533d97dbc5549dd22db23b2362 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_aca87be7d1a39e71cd7b10e7059f7183.setIcon(icon_1ca87a533d97dbc5549dd22db23b2362);
+        
+    
+        var popup_5daff6285ce060f3dd0aa6596d390e21 = L.popup({"maxWidth": 400});
+
+        
+            var html_97b74cc204796559944559038c947596 = $(`<div id="html_97b74cc204796559944559038c947596" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Краснопресненская</b><br/>           День просмотра: <b>6</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322897332/">https://www.cian.ru/sale/flat/322897332/</a></li></ul>         </div>         </div>`)[0];
+            popup_5daff6285ce060f3dd0aa6596d390e21.setContent(html_97b74cc204796559944559038c947596);
+        
+
+        marker_aca87be7d1a39e71cd7b10e7059f7183.bindPopup(popup_5daff6285ce060f3dd0aa6596d390e21)
+        ;
+
+        
+    
+    
+            marker_aca87be7d1a39e71cd7b10e7059f7183.bindTooltip(
+                `<div>
+                     Краснопресненская — день 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5b1a2e84d5acdb7327f93e706d9a1fa = L.marker(
+                [55.7408, 37.533],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_53f2d596b7cedcd8fc7d2a68e655eeea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d5b1a2e84d5acdb7327f93e706d9a1fa.setIcon(icon_53f2d596b7cedcd8fc7d2a68e655eeea);
+        
+    
+        var popup_3828df30b2def1b03901d62259401b35 = L.popup({"maxWidth": 400});
+
+        
+            var html_7e2374570638ffb46cac5c429053b617 = $(`<div id="html_7e2374570638ffb46cac5c429053b617" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Кутузовская</b><br/>           День просмотра: <b>7</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/309123236/">https://www.cian.ru/sale/flat/309123236/</a></li></ul>         </div>         </div>`)[0];
+            popup_3828df30b2def1b03901d62259401b35.setContent(html_7e2374570638ffb46cac5c429053b617);
+        
+
+        marker_d5b1a2e84d5acdb7327f93e706d9a1fa.bindPopup(popup_3828df30b2def1b03901d62259401b35)
+        ;
+
+        
+    
+    
+            marker_d5b1a2e84d5acdb7327f93e706d9a1fa.bindTooltip(
+                `<div>
+                     Кутузовская — день 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c88ee94fc08c64efba090b532137c20 = L.marker(
+                [55.7076, 37.584],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_b65aad8f971b6fe572cbff2bb24957df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_6c88ee94fc08c64efba090b532137c20.setIcon(icon_b65aad8f971b6fe572cbff2bb24957df);
+        
+    
+        var popup_2b08fdac589964fa62c3eb8cfd523e6d = L.popup({"maxWidth": 400});
+
+        
+            var html_e33965cc7bbf95f872bb501c6f276440 = $(`<div id="html_e33965cc7bbf95f872bb501c6f276440" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Ленинский проспект</b><br/>           День просмотра: <b>7</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/321904513/">https://www.cian.ru/sale/flat/321904513/</a></li></ul>         </div>         </div>`)[0];
+            popup_2b08fdac589964fa62c3eb8cfd523e6d.setContent(html_e33965cc7bbf95f872bb501c6f276440);
+        
+
+        marker_6c88ee94fc08c64efba090b532137c20.bindPopup(popup_2b08fdac589964fa62c3eb8cfd523e6d)
+        ;
+
+        
+    
+    
+            marker_6c88ee94fc08c64efba090b532137c20.bindTooltip(
+                `<div>
+                     Ленинский проспект — день 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_273bf0df930465fce060725e5b6fec8b = L.marker(
+                [55.689, 37.694],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_057f37772145914c09c4ed96cbb2f576 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_273bf0df930465fce060725e5b6fec8b.setIcon(icon_057f37772145914c09c4ed96cbb2f576);
+        
+    
+        var popup_47bbae0ef1625617def1cdb42bc2d6f9 = L.popup({"maxWidth": 400});
+
+        
+            var html_767602165c18a143d021ccf00629cd6d = $(`<div id="html_767602165c18a143d021ccf00629cd6d" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Нагатинский затон</b><br/>           День просмотра: <b>7</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322110627/">https://www.cian.ru/sale/flat/322110627/</a></li></ul>         </div>         </div>`)[0];
+            popup_47bbae0ef1625617def1cdb42bc2d6f9.setContent(html_767602165c18a143d021ccf00629cd6d);
+        
+
+        marker_273bf0df930465fce060725e5b6fec8b.bindPopup(popup_47bbae0ef1625617def1cdb42bc2d6f9)
+        ;
+
+        
+    
+    
+            marker_273bf0df930465fce060725e5b6fec8b.bindTooltip(
+                `<div>
+                     Нагатинский затон — день 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0484b0a2a4a42559978e2aeee98851f4 = L.marker(
+                [55.7314, 37.6385],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_313e9664cb3a8a40876807c87a58b549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0484b0a2a4a42559978e2aeee98851f4.setIcon(icon_313e9664cb3a8a40876807c87a58b549);
+        
+    
+        var popup_3fcb163e90896162bf0b3d9ff5c34bea = L.popup({"maxWidth": 400});
+
+        
+            var html_582268d4cc2a414703d726ccbf6c7c7b = $(`<div id="html_582268d4cc2a414703d726ccbf6c7c7b" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Павелецкая</b><br/>           День просмотра: <b>4</b><br/>           Квартир: <b>2</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322625574/">https://www.cian.ru/sale/flat/322625574/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/320681659/">https://www.cian.ru/sale/flat/320681659/</a></li></ul>         </div>         </div>`)[0];
+            popup_3fcb163e90896162bf0b3d9ff5c34bea.setContent(html_582268d4cc2a414703d726ccbf6c7c7b);
+        
+
+        marker_0484b0a2a4a42559978e2aeee98851f4.bindPopup(popup_3fcb163e90896162bf0b3d9ff5c34bea)
+        ;
+
+        
+    
+    
+            marker_0484b0a2a4a42559978e2aeee98851f4.bindTooltip(
+                `<div>
+                     Павелецкая — день 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88eea49f05c971c3b22dcbee4d8a27a3 = L.marker(
+                [55.7361, 37.5087],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_73a04e88bca7fce34ceb5b9f6d44b293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_88eea49f05c971c3b22dcbee4d8a27a3.setIcon(icon_73a04e88bca7fce34ceb5b9f6d44b293);
+        
+    
+        var popup_875e693e62f20efa4b860a59b63f9be4 = L.popup({"maxWidth": 400});
+
+        
+            var html_8cb33586c9641183eefc662e4050536b = $(`<div id="html_8cb33586c9641183eefc662e4050536b" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Парк Победы</b><br/>           День просмотра: <b>5</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/322797730/">https://www.cian.ru/sale/flat/322797730/</a></li></ul>         </div>         </div>`)[0];
+            popup_875e693e62f20efa4b860a59b63f9be4.setContent(html_8cb33586c9641183eefc662e4050536b);
+        
+
+        marker_88eea49f05c971c3b22dcbee4d8a27a3.bindPopup(popup_875e693e62f20efa4b860a59b63f9be4)
+        ;
+
+        
+    
+    
+            marker_88eea49f05c971c3b22dcbee4d8a27a3.bindTooltip(
+                `<div>
+                     Парк Победы — день 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4f4af38ff4025518a60a8b0a90402a2 = L.marker(
+                [55.7473, 37.6803],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_3726575da5b2f9280ec7bdf460a1f7cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b4f4af38ff4025518a60a8b0a90402a2.setIcon(icon_3726575da5b2f9280ec7bdf460a1f7cf);
+        
+    
+        var popup_2f90d50682b370e39f0dfdf74fc29c46 = L.popup({"maxWidth": 400});
+
+        
+            var html_d1cd7b4302c46b8a5b4f6546d120733d = $(`<div id="html_d1cd7b4302c46b8a5b4f6546d120733d" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Римская</b><br/>           День просмотра: <b>5</b><br/>           Квартир: <b>2</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/314137928/">https://www.cian.ru/sale/flat/314137928/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/319864297/">https://www.cian.ru/sale/flat/319864297/</a></li></ul>         </div>         </div>`)[0];
+            popup_2f90d50682b370e39f0dfdf74fc29c46.setContent(html_d1cd7b4302c46b8a5b4f6546d120733d);
+        
+
+        marker_b4f4af38ff4025518a60a8b0a90402a2.bindPopup(popup_2f90d50682b370e39f0dfdf74fc29c46)
+        ;
+
+        
+    
+    
+            marker_b4f4af38ff4025518a60a8b0a90402a2.bindTooltip(
+                `<div>
+                     Римская — день 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47f3d19114caa5fce3851b6d2436b253 = L.marker(
+                [55.7488, 37.5826],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_f48bd43a685e13c5c3b0874d044ec61b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_47f3d19114caa5fce3851b6d2436b253.setIcon(icon_f48bd43a685e13c5c3b0874d044ec61b);
+        
+    
+        var popup_17786726df1ec0983721834f8f318cde = L.popup({"maxWidth": 400});
+
+        
+            var html_0d201c78603888b3b015da4f6d149ce5 = $(`<div id="html_0d201c78603888b3b015da4f6d149ce5" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Смоленская</b><br/>           День просмотра: <b>5</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/317569441">https://www.cian.ru/sale/flat/317569441</a></li></ul>         </div>         </div>`)[0];
+            popup_17786726df1ec0983721834f8f318cde.setContent(html_0d201c78603888b3b015da4f6d149ce5);
+        
+
+        marker_47f3d19114caa5fce3851b6d2436b253.bindPopup(popup_17786726df1ec0983721834f8f318cde)
+        ;
+
+        
+    
+    
+            marker_47f3d19114caa5fce3851b6d2436b253.bindTooltip(
+                `<div>
+                     Смоленская — день 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c289c17f7e7f77163b1a88fb3468eb4 = L.marker(
+                [55.6939, 37.6637],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_1badebcc4ae1cba8c2dff4a53219dc9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0c289c17f7e7f77163b1a88fb3468eb4.setIcon(icon_1badebcc4ae1cba8c2dff4a53219dc9c);
+        
+    
+        var popup_d96f5dd5db2bc0312a09529b7543c529 = L.popup({"maxWidth": 400});
+
+        
+            var html_2a984f4302358bc265f32e4fcd193910 = $(`<div id="html_2a984f4302358bc265f32e4fcd193910" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Технопарк</b><br/>           День просмотра: <b>4</b><br/>           Квартир: <b>2</b>           <ul><li><a target="_blank" href="Продаю двухкомнатную квартиру 58,3м² ул. Мустая Карима, 12, Москва, м. Технопарк - база ЦИАН, объявление 322636601">Продаю двухкомнатную квартиру 58,3м² ул. Мустая Карима, 12, Москва, м. Технопарк - база ЦИАН, объявление 322636601</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322502179/">https://www.cian.ru/sale/flat/322502179/</a></li></ul>         </div>         </div>`)[0];
+            popup_d96f5dd5db2bc0312a09529b7543c529.setContent(html_2a984f4302358bc265f32e4fcd193910);
+        
+
+        marker_0c289c17f7e7f77163b1a88fb3468eb4.bindPopup(popup_d96f5dd5db2bc0312a09529b7543c529)
+        ;
+
+        
+    
+    
+            marker_0c289c17f7e7f77163b1a88fb3468eb4.bindTooltip(
+                `<div>
+                     Технопарк — день 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dddc140c7578bb83c32039712e4ea24c = L.marker(
+                [55.7082, 37.6224],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_4e8663dc2a002811182723508b05f7ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dddc140c7578bb83c32039712e4ea24c.setIcon(icon_4e8663dc2a002811182723508b05f7ac);
+        
+    
+        var popup_ee53cba9f710ab729580613ceff4d370 = L.popup({"maxWidth": 400});
+
+        
+            var html_a3f3051ddeaa93bdcaa47e676bca59d6 = $(`<div id="html_a3f3051ddeaa93bdcaa47e676bca59d6" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Тульская</b><br/>           День просмотра: <b>4</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/323057510/">https://www.cian.ru/sale/flat/323057510/</a></li></ul>         </div>         </div>`)[0];
+            popup_ee53cba9f710ab729580613ceff4d370.setContent(html_a3f3051ddeaa93bdcaa47e676bca59d6);
+        
+
+        marker_dddc140c7578bb83c32039712e4ea24c.bindPopup(popup_ee53cba9f710ab729580613ceff4d370)
+        ;
+
+        
+    
+    
+            marker_dddc140c7578bb83c32039712e4ea24c.bindTooltip(
+                `<div>
+                     Тульская — день 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aefc76f4ef99dfcaa56726b7503f0d2 = L.marker(
+                [55.7631, 37.562],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_b2dd85f0eca324546ed11899ad6cdcc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_3aefc76f4ef99dfcaa56726b7503f0d2.setIcon(icon_b2dd85f0eca324546ed11899ad6cdcc8);
+        
+    
+        var popup_dd5e805ee05931069afd86c485a6bec2 = L.popup({"maxWidth": 400});
+
+        
+            var html_be5593cf72a3a0bdfc69e6958a2a6a6d = $(`<div id="html_be5593cf72a3a0bdfc69e6958a2a6a6d" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Улица 1905 года</b><br/>           День просмотра: <b>6</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/319051137/">https://www.cian.ru/sale/flat/319051137/</a></li></ul>         </div>         </div>`)[0];
+            popup_dd5e805ee05931069afd86c485a6bec2.setContent(html_be5593cf72a3a0bdfc69e6958a2a6a6d);
+        
+
+        marker_3aefc76f4ef99dfcaa56726b7503f0d2.bindPopup(popup_dd5e805ee05931069afd86c485a6bec2)
+        ;
+
+        
+    
+    
+            marker_3aefc76f4ef99dfcaa56726b7503f0d2.bindTooltip(
+                `<div>
+                     Улица 1905 года — день 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4180f013a347a273c866d445650a933 = L.marker(
+                [55.718, 37.6071],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_cdf3c7451fe8eb64955c54e9af47a68a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4180f013a347a273c866d445650a933.setIcon(icon_cdf3c7451fe8eb64955c54e9af47a68a);
+        
+    
+        var popup_0ede865041e98cc56f921c489686a157 = L.popup({"maxWidth": 400});
+
+        
+            var html_c80f7f60256e39b8f4a9aa69ea80d8ce = $(`<div id="html_c80f7f60256e39b8f4a9aa69ea80d8ce" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Шаболовка</b><br/>           День просмотра: <b>3</b><br/>           Квартир: <b>4</b>           <ul><li><a target="_blank" href="Продажа двухкомнатной квартиры 59м² ул. Шухова, 11/16, Москва, м. Шаболовская - база ЦИАН, объявление 322169845">Продажа двухкомнатной квартиры 59м² ул. Шухова, 11/16, Москва, м. Шаболовская - база ЦИАН, объявление 322169845</a></li><li><a target="_blank" href="Купить трехкомнатную квартиру 58,5м² Хавская ул., 18, Москва, м. Шаболовская - база ЦИАН, объявление 319320177">Купить трехкомнатную квартиру 58,5м² Хавская ул., 18, Москва, м. Шаболовская - база ЦИАН, объявление 319320177</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/318987575/">https://www.cian.ru/sale/flat/318987575/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/323437546/">https://www.cian.ru/sale/flat/323437546/</a></li></ul>         </div>         </div>`)[0];
+            popup_0ede865041e98cc56f921c489686a157.setContent(html_c80f7f60256e39b8f4a9aa69ea80d8ce);
+        
+
+        marker_e4180f013a347a273c866d445650a933.bindPopup(popup_0ede865041e98cc56f921c489686a157)
+        ;
+
+        
+    
+    
+            marker_e4180f013a347a273c866d445650a933.bindTooltip(
+                `<div>
+                     Шаболовка — день 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38f9c4703a260a41f91b7d8163df27ee = L.marker(
+                [55.7575, 37.5165],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_d478baea9d6adb82050812e8e29f871d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38f9c4703a260a41f91b7d8163df27ee.setIcon(icon_d478baea9d6adb82050812e8e29f871d);
+        
+    
+        var popup_f5afe97085b915b3c3cc66605e05f859 = L.popup({"maxWidth": 400});
+
+        
+            var html_0bb53450d4fa1e2eb21d4f971168dd98 = $(`<div id="html_0bb53450d4fa1e2eb21d4f971168dd98" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Шелепиха</b><br/>           День просмотра: <b>1</b><br/>           Квартир: <b>7</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/319101903/">https://www.cian.ru/sale/flat/319101903/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322171228/">https://www.cian.ru/sale/flat/322171228/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322155987/">https://www.cian.ru/sale/flat/322155987/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/323065803/">https://www.cian.ru/sale/flat/323065803/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/318301431/">https://www.cian.ru/sale/flat/318301431/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/322444116/">https://www.cian.ru/sale/flat/322444116/</a></li><li><a target="_blank" href="https://www.cian.ru/sale/flat/320994443/">https://www.cian.ru/sale/flat/320994443/</a></li></ul>         </div>         </div>`)[0];
+            popup_f5afe97085b915b3c3cc66605e05f859.setContent(html_0bb53450d4fa1e2eb21d4f971168dd98);
+        
+
+        marker_38f9c4703a260a41f91b7d8163df27ee.bindPopup(popup_f5afe97085b915b3c3cc66605e05f859)
+        ;
+
+        
+    
+    
+            marker_38f9c4703a260a41f91b7d8163df27ee.bindTooltip(
+                `<div>
+                     Шелепиха — день 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05e230c5debe4a2739ee99d0c541d256 = L.marker(
+                [55.7824, 37.7052],
+                {}
+            ).addTo(map_fd4556c56fed82dab5d96cb5c66532e4);
+        
+    
+            var icon_fab8f612d12a3385763cf2f12efe13c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_05e230c5debe4a2739ee99d0c541d256.setIcon(icon_fab8f612d12a3385763cf2f12efe13c8);
+        
+    
+        var popup_0c5e0aee81eb12e67cd66cfa5e6d73e9 = L.popup({"maxWidth": 400});
+
+        
+            var html_44d5aef1c5d0ad9f5055e59c17edc05d = $(`<div id="html_44d5aef1c5d0ad9f5055e59c17edc05d" style="width: 100.0%; height: 100.0%;">         <div style="min-width:260px">           <b>Электрозаводская</b><br/>           День просмотра: <b>7</b><br/>           Квартир: <b>1</b>           <ul><li><a target="_blank" href="https://www.cian.ru/sale/flat/321673477/">https://www.cian.ru/sale/flat/321673477/</a></li></ul>         </div>         </div>`)[0];
+            popup_0c5e0aee81eb12e67cd66cfa5e6d73e9.setContent(html_44d5aef1c5d0ad9f5055e59c17edc05d);
+        
+
+        marker_05e230c5debe4a2739ee99d0c541d256.bindPopup(popup_0c5e0aee81eb12e67cd66cfa5e6d73e9)
+        ;
+
+        
+    
+    
+            marker_05e230c5debe4a2739ee99d0c541d256.bindTooltip(
+                `<div>
+                     Электрозаводская — день 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
